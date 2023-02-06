@@ -9,7 +9,7 @@ function calculate(event) {
     if (!isNaN(tableNum) && !isNaN(tableRange)) {
         resultDiv.innerHTML = "Table of " + tableNum + "<br>";
         for (x = 0; x <= tableRange; x++) {
-            var result = tableNum * x;
+            var result = parseFloat(tableNum * x , 2);
             resultDiv.innerHTML += tableNum + " X " + x + " = " + result + " <br>";
         }
     } else {
