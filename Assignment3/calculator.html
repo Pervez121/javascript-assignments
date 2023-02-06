@@ -4,22 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-height: 98vh;
+    padding: 26px;
+    background: url(./abstract-math-number-background-vector-illustration-business-design-black-white-colors-random-sign-flying-border-frame-school-70831500.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#result {
+    font-size: 25px;
+    word-spacing: 12px;
+    font-family: system-ui;
+    border: solid gray 1px;
+    overflow: scroll;
+    height: 93vh;
+    overflow: scroll;
+}
+
+button {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 28px;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 26px;
+    font-family: system-ui;
+}
+
+label {
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 500;
+    line-height: 3;
+}
+
+input {
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    border: solid 1px black;
+    border-radius: 6px;
+}
+
+form {
+    margin-top: 25vh;
+    padding: 38px;
+    border: solid 1px black;
+    border-radius: 12px;
+}
+@media screen and (max-width: 1120px) {
+  body {
+    
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+  }
+}
+    </style>
     <title>Calculator</title>
 </head>
 <body>
     <div class="calculator-box">
-        <form action="GET" name ="my-form">
+        <form >
             <label for="Table-value">Enter Value of Table</label>
-            <input type="number" name="table-value" id="Range-value">
+            <input type="number" name="table-value" id="Table-value">
             <br>
             <label for="Range-value">Enter Value of Range</label>
             <input type="number" name="Range-value" id="Range-value">
-
+            <button type="submit" value="Submit" onclick="calculate(event); return false;" >Submit</button>
         </form>
     </div>
+    <div id="result"></div>
 
 
 
-    <script src="app.js"> </script>
+    <script src="calculator.js"> </script>
 </body>
 </html>
