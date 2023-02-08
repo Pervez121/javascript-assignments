@@ -65,6 +65,43 @@ document.write("Total Cost of 5 tickets to the Movie is: " + ticketPrice * 5 + "
     // perform calculation using num1 and num2
 
 
+    var Chapter5 = document.getElementById("Chapter5");
+    var iniValue = 10;
+    document.write("Result:"+"The value is: "+iniValue+"<br>"+"....................."+"<br>")
+    ++iniValue
+    document.write("The value of ++a is : "+iniValue+"<br>")
+    document.write("Now The value of a is : ", iniValue+"<br>")
+
+   
+    document.write("The value of a++ is : "+ iniValue++ +"<br>")
+    document.write("Now The value of a is : ", iniValue+"<br>")
+
+    document.write("The value of --a is : "+ --iniValue +"<br>")
+    document.write("Now The value of a is : ", iniValue+"<br>")
+
+    document.write("The value of a-- is : "+ iniValue-- +"<br>")
+    document.write("Now The value of a is : ", iniValue+"<br>")
+
+
+//     Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+
+
+
+var mul = prompt("enter table number", 5)
+for(loop = 1; loop<=10 ; loop++)
+{
+    mLoop = mul * loop;
+    document.write(mul + "*" + loop + " = "+mLoop+"<br>")
+}
+
+
+
+
+
+
 
 
 
