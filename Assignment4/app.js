@@ -100,3 +100,51 @@ alert("False");
 if("car" < "cat"){
 alert("car is smaller than cat");
 }
+
+// Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute
+// grade as per following table:
+
+
+
+var Computer = prompt("Enter Marks Obtained In Computer science");
+var Biology = prompt("Enter Marks Obtained In Biology");
+var Chemistry = prompt("Enter Marks Obtained In Chemistry");
+var totalMarks = 300;
+var ObtainedMarks = parseInt( Computer) + parseInt(Biology)  + parseInt(Chemistry);
+var TotalPtage = (totalMarks/ObtainedMarks) * 100;
+var grade = true;
+var remarks = true;
+var fifthQuestion = document.getElementById("fifthQuestion");
+if(TotalPtage >= 80){
+    grade = "A-one";
+    remarks = "Excellent";
+}
+else if(TotalPtage >= 70  && TotalPtage <80){
+    grade = "A";
+    remarks = "Good";
+}
+else if(TotalPtage >= 60  && TotalPtage <70){
+    grade = "B";
+    remarks = "You Need To Improve";
+}
+else if(TotalPtage < 60 ){
+    grade = "Fail";
+    remarks = "You Need To Improve";
+}
+else{
+alert("Incorrect Inputs")
+}
+
+
+
+
+
+
+
+fifthQuestion.innerHTML += "Total Marks: "+ totalMarks+"<br>"+
+                            "Marks Obtained: "+ ObtainedMarks+"<br>"+
+                            "Percentage: "+TotalPtage+"%"+"<br>"+
+                            "Grade: "+grade+"<br>"+
+                            "Remarks: "+remarks+"<br>"
