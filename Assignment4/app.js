@@ -148,3 +148,109 @@ fifthQuestion.innerHTML += "Total Marks: "+ totalMarks+"<br>"+
                             "Percentage: "+TotalPtage+"%"+"<br>"+
                             "Grade: "+grade+"<br>"+
                             "Remarks: "+remarks+"<br>"
+
+
+//                     7. Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+
+var SecretNumber = 6;
+var guessNumber  = prompt("Guess the number");
+var sixthQuestion = document.getElementById("sixthQuestion");
+
+if(SecretNumber === guessNumber){
+sixthQuestion.innerHTML += "Bingo! Correct answer"+"<br>"
+}
+else if (guessNumber == secQuestion+1 || guessNumber == secQuestion+1){
+    sixthQuestion.innerHTML += "Close enough to the correct answer"+"<br>"
+}
+else{
+    sixthQuestion.innerHTML += "Incorrect answer"+"<br>"
+}
+
+// 8. Write a program to check whether the given number is
+// divisible by 3. Show the message to the user if the number
+// is divisible by 3.
+
+var seventhQuestion = document.getElementById("seventhQuestion");
+var inputNumber = prompt("enter number to check divisible by 3");
+
+if(inputNumber%3==0){
+    seventhQuestion.innerHTML += inputNumber +" is divible by 3"+"<br>"
+}
+else{
+    seventhQuestion.innerHTML += inputNumber +" is Not divible by 3"+"<br>"
+}
+
+// 9. Write a program that checks whether the given input is an
+// even number or an odd number.
+
+var eightQuestion = document.getElementById("eightQuestion");
+var checkNumber = prompt("Input Number to check Even or Odd")
+
+
+if(checkNumber%2 == 0){
+    eightQuestion.innerHTML  += checkNumber + " is an even number"
+}
+else if (checkNumber%2 !== 0){
+    eightQuestion.innerHTML  += checkNumber + " is an Odd number"
+}
+else{
+    alert("Please enter a valid number")
+}
+
+// Write a program to create a calculator for +,-,*, / & %
+// using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+
+const firstNumber = parseFloat(prompt("Enter first number: "));
+const secondNumber = parseFloat(prompt("Enter second number: "));
+const operations = prompt("Enter operation (+, -, *, /, %): ");
+var ninthQuestion = document.getElementById("ninthQuestion");
+
+if (operations === '+') {
+
+  ninthQuestion.innerHTML += "Result: "+parseFloat(firstNumber + secondNumber)  + "<br>"
+} else if (operations === '-') {
+
+  ninthQuestion.innerHTML += "Result: "+parseFloat(firstNumber - secondNumber)  + "<br>"
+} else if (operations === '*') {
+
+  ninthQuestion.innerHTML += "Result: "+parseFloat(firstNumber * secondNumber ) + "<br>"
+} else if (operations === '/') {
+ 
+  ninthQuestion.innerHTML += "Result: "+ parseFloat(firstNumber / secondNumber)  + "<br>"
+} else if (operations === '%') {
+
+  ninthQuestion.innerHTML += "Result: "+ parseFloat( firstNumber % secondNumber) + "<br>"
+} else {
+    ninthQuestion.innerHTML += "Invalid operator";
+
+}
+
+
+// 1. Write a program that takes a character (number or string)
+// in a variable & checks whether the given input is a
+// number, uppercase letter or lower case letter. (Hint: ASCII
+// codes:- A=65, Z=90, a=97, z=122).
+
+var Question1 = document.getElementById("Question1");
+var cherec = prompt("enter one cherecter a number , symbol or a string");
+var characCode = [];
+
+for (let x = 0; x < cherec.length ; x++ )
+{
+    characCode.push(cherec.charCodeAt(x));
+}
+Question1.innerHTML += characCode+"<br>"
+
+if ()
+
+
