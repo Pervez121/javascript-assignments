@@ -247,10 +247,32 @@ var characCode = [];
 
 for (let x = 0; x < cherec.length ; x++ )
 {
-    characCode.push(cherec.charCodeAt(x));
+if( cherec.charCodeAt(x) < 64 ){
+        //characCode.push(cherec.charCodeAt(x));
+        characCode.push("Symbol");
+
+}
+else if(cherec.charCodeAt(x) > 64 && cherec.charCodeAt(x) <= 90){
+    characCode.push("Capital Latter");
+    
+}
+
+else if(cherec.charCodeAt(x) > 90 && cherec.charCodeAt(x) <= 96){
+    characCode.push("Symbol");
+    
+}
+
+else if(cherec.charCodeAt(x) >= 97 && cherec.charCodeAt(x) <= 122){
+    characCode.push("Symbol");
+    
+}
+else if(cherec.charCodeAt(x) >= 123 && cherec.charCodeAt(x) <= 126){
+    characCode.push("Symbol");
+}
+    
+   
 }
 Question1.innerHTML += characCode+"<br>"
 
-if ()
 
 
