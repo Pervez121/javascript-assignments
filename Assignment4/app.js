@@ -259,7 +259,7 @@ else if(cherec.charCodeAt(x) > 64 && cherec.charCodeAt(x) <= 90){
 
 else if(cherec.charCodeAt(x) > 90 && cherec.charCodeAt(x) <= 96){
     characCode.push("Symbol");
-    
+
 }
 
 else if(cherec.charCodeAt(x) >= 97 && cherec.charCodeAt(x) <= 122){
