@@ -132,8 +132,34 @@ console.log(selectedCities);
 // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
 // (Use array’s join method)
 
-
 var answerTwelve = document.getElementById("answerTwelve");
+var arr = ["This ", " is ", " my " , "cat"];
+answerTwelve.innerHTML +=  (arr.join()) + "<br>"
+answerTwelve.innerHTML +=  (arr.join(" "))
+
+// 13. Create a new array. Store values one by one in such a way
+// that you can access the values in the order in which they
+// were stored. (FIFO-First In First Out)
+
+var answerThirteen = document.getElementById("answerThirteen");
+var computer = ["cpu" , "moniter" , "keyboard" , "mouse"]
+answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+
+// Create a new array. Store values one by one in such a way
+// that you can access the values in reverse order. (Last In-
+// First Out)
+
+var answerFourteen = document.getElementById("answerFourteen");
+var Pens = []
+Pens.push("black Pen");
+Pens.push("red Pen ");
+Pens.push("Blue pen");
+Pens.push("Green Pen");
+
+
 
 
 
