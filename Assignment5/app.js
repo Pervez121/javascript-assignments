@@ -283,13 +283,61 @@ var labelfive = document.getElementById("labelfive");
 var quesfive = document.getElementById("quesfive");
 labelfive.innerHTML += "E. Series"
 for( count = 0 ; count <= 20 ; count= count+2){
-    quesfive.innerHTML += count+k+","
+    quesfive.innerHTML += count+"k"+","
     console.log(count)
 }
 
+// 7. You have an array
+// A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an
+// array.
+// After searching, prompt the user whether the given item is
+// found in the list or not. Example:
+
+var Bakery = ["cake", "apple pie", "cookie", "chips", "patties"]
+function searchWord(){
+  var search = document.getElementById("search").value;
+  var available = false;
+  for(a = 0 ; a < Bakery.length ; a++){
+  if(search == Bakery[a]){
+    available = true;
+    break;
+  }
+  else{
+    available;
+  }
+}
+  available == true? alert(search + " Available at shelve no "+ [a]  ): alert( search + " Not Available")
+}
+
+// Write a program to identify the largest number in the
+// given array.
+// A = [24, 53, 78, 91, 12].
+
+var numbers = [24, 53, 78, 91, 12];
+
+var largest = numbers[0]
+var smallest =numbers[numbers.length-1]
+
+for(count = 0 ; count < numbers.length ; count++){
+    if(numbers[count] > largest){
+        largest = numbers[count]
+    }
+    else if (numbers[count] < smallest){
+        smallest = numbers[count]
+    }
+}
+console.log("largest number: "+ largest)
+console.log("Smallest number: "+ smallest)
 
 
+// 10. Write a program to print multiples of 5 ranging 1 to 100.
 
+
+// var fiveMultifles;
+// for(mult = 0 ; mult <= 100 ; mult++){
+//     fiveMultifles = num % 
+// }
 
 
 
