@@ -166,35 +166,126 @@
 // console.log(arr)
 // console.log(newArr) 
 
-function getData (){
-    var name = document.getElementById('name').value
-    var para = document.getElementById('data')
-    reverseString = name.split('').reverse().join('')
-    if(name===reverseString){
-         para.innerHTML = "Its Palindrome"
-    }
-    else{
-        para.innerHTML = "Its not Palindrome"
-    }
+// function getData (){
+//     var name = document.getElementById('name').value
+//     var para = document.getElementById('data')
+//     reverseString = name.split('').reverse().join('')
+//     if(name===reverseString){
+//          para.innerHTML = "Its Palindrome"
+//     }
+//     else{
+//         para.innerHTML = "Its not Palindrome"
+//     }
 
-    
+
+// }
+
+// 1. Declare and initialize an empty multidimensional array.
+// (Array of arrays)
+
+var multiArr = [["apple", "banana"], ["carrot", "tomatto"]]
+
+// 2. Declare and initialize a multidimensional array
+// representing the following matrix:
+
+var matrix = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]]
+
+var answerFourteen = document.getElementById("answerFourteen");
+answerFourteen.innerHTML += matrix[0] + "<br>" + matrix[1] + "<br>" + matrix[2]
+console.log(matrix[0], matrix[1], matrix[2])
+
+
+// 3. Write a program to print numeric counting from 1 to 10.
+
+var answerFifteen = document.getElementById("answerFifteen");
+for (var a = 1; a <= 15; a++) {
+    answerFifteen.innerHTML += a + "<br>";
+}
+
+// 4. Write a program to print multiplication table of any
+// number using for loop. Table number & length should be
+// taken as an input from user.
+function PrintTable() {
+    var input1 = parseInt(document.getElementById("tableNumber").value);
+    var input2 = parseInt(document.getElementById("tableLength").value);
+
+    var tableNumber = parseInt(input1);
+    var tableLength = parseInt(input2);
+
+    var answerSixteen = document.getElementById("answerSixteen");
+    if (!isNaN(tableLength) && !isNaN(tableNumber)) {
+        for (var num = 0; num <= tableLength; num++) {
+            answerSixteen.innerHTML += tableNumber + " * " + num + " = " + tableNumber * num + "<br>"
+            console.log("done 0")
+        }
+
+
+    }
+    else {
+        console.log("please inter corrrect numbers")
+    }
 }
 
 
+// 5. Write a program to print items of the following array
+// using for loop:
+// fruits = [“apple”, “banana”, “mango”, “orange”,
+// “strawberry”]
 
+fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+var answerSeventeen = document.getElementById("answerSeventeen");
+for (x = 0; x <= fruits.length - 1; x++) {
+    answerSeventeen.innerHTML += fruits[x] + "<br>"
+}
+answerSeventeen.innerHTML += "Element At Index 0 is " + fruits[0] + "<br>" +
+    "Element At Index 1 is " + fruits[1] + "<br>" +
+    "Element At Index 2 is " + fruits[2] + "<br>" +
+    "Element At Index 3 is " + fruits[3] + "<br>";
 
+// 6. Generate the following series in your browser. See                             
+//example output.
+//      a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+//      b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+//      c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+//      d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+//      e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+var labelOne = document.getElementById("labelOne");
+var quesOne = document.getElementById("quesOne");
+labelOne.innerHTML += "A. Counting"
+for (count = 0; count <= 15; count++) {
+    quesOne.innerHTML += count+","
+    console.log(count)
+}
+var labeltwo = document.getElementById("labeltwo");
+var questwo = document.getElementById("questwo");
+labeltwo.innerHTML += "B. Reverse counting"
+for (count = 10; count >= 0; count--) {
+    questwo.innerHTML += count+","
+    console.log(count)
+}
+var labelthree = document.getElementById("labelthree");
+var questhree = document.getElementById("questhree");
+labelthree.innerHTML += "C. Even"
+for( count = 0 ; count <= 20 ; count+=2){
+    questhree.innerHTML += count+","
+    console.log(count)
+}
 
+var labelfour = document.getElementById("labelfour");
+var quesfour = document.getElementById("quesfour");
+labelfour.innerHTML += "D. odd"
+for( count = 1 ; count <= 20 ; count+=2){
+    quesfour.innerHTML += count+","
+    console.log(count)
+}
 
-
-
-
-
-
-
-
-
-
-
+var labelfive = document.getElementById("labelfive");
+var quesfive = document.getElementById("quesfive");
+labelfive.innerHTML += "E. Series"
+for( count = 0 ; count <= 20 ; count= count+2){
+    quesfive.innerHTML += count+k+","
+    console.log(count)
+}
 
 
 
