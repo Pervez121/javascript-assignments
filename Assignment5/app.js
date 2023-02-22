@@ -116,48 +116,71 @@
 
 // answerTen.innerHTML += "Score Of Students: "+ score +"<br>"+"ordered scores of students: "+score.sort()+"<br>"
 
-// 11. Write a program to initialize an array with city names.
-// Copy 3 array elements from cities array to selectedCities
-// array.
+// // 11. Write a program to initialize an array with city names.
+// // Copy 3 array elements from cities array to selectedCities
+// // array.
 
-var answerEleven = document.getElementById("answerEleven");
-var cities = ["islamabad" , "karachi" , "Lahore", "Rawalpindi" , "peshawar"]
-var selectedCities = cities.slice(0, 2)
-answerEleven.innerHTML += selectedCities + "<br>"
-console.log(selectedCities);
+// var answerEleven = document.getElementById("answerEleven");
+// var cities = ["islamabad" , "karachi" , "Lahore", "Rawalpindi" , "peshawar"]
+// var selectedCities = cities.slice(0, 2)
+// answerEleven.innerHTML += selectedCities + "<br>"
+// console.log(selectedCities);
 
 
-// 12. Write a program to create a single string from the
-// below mentioned array:
-// var arr = [“This ”, “ is ”, “ my ”, “ cat”];
-// (Use array’s join method)
+// // 12. Write a program to create a single string from the
+// // below mentioned array:
+// // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+// // (Use array’s join method)
 
-var answerTwelve = document.getElementById("answerTwelve");
-var arr = ["This ", " is ", " my " , "cat"];
-answerTwelve.innerHTML +=  (arr.join()) + "<br>"
-answerTwelve.innerHTML +=  (arr.join(" "))
+// var answerTwelve = document.getElementById("answerTwelve");
+// var arr = ["This ", " is ", " my " , "cat"];
+// answerTwelve.innerHTML +=  (arr.join()) + "<br>"
+// answerTwelve.innerHTML +=  (arr.join(" "))
 
-// 13. Create a new array. Store values one by one in such a way
-// that you can access the values in the order in which they
-// were stored. (FIFO-First In First Out)
+// // 13. Create a new array. Store values one by one in such a way
+// // that you can access the values in the order in which they
+// // were stored. (FIFO-First In First Out)
 
-var answerThirteen = document.getElementById("answerThirteen");
-var computer = ["cpu" , "moniter" , "keyboard" , "mouse"]
-answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
-answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
-answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
-answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+// var answerThirteen = document.getElementById("answerThirteen");
+// var computer = ["cpu" , "moniter" , "keyboard" , "mouse"]
+// answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+// answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+// answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
+// answerThirteen.innerHTML += "<h2>Out</h2> <br>" + (computer.shift()) + "<br>"
 
-// Create a new array. Store values one by one in such a way
-// that you can access the values in reverse order. (Last In-
-// First Out)
+// // Create a new array. Store values one by one in such a way
+// // that you can access the values in reverse order. (Last In-
+// // First Out)
 
-var answerFourteen = document.getElementById("answerFourteen");
-var Pens = []
-Pens.push("black Pen");
-Pens.push("red Pen ");
-Pens.push("Blue pen");
-Pens.push("Green Pen");
+// var answerFourteen = document.getElementById("answerFourteen");
+// var Pens = []
+// Pens.push("black Pen");
+// Pens.push("red Pen ");
+// Pens.push("Blue pen");
+// Pens.push("Green Pen");
+
+
+// var arr = ["apple" , "ball" , "cat"]
+// var newArr = arr;
+// newArr.push("dog")
+// console.log(arr)
+// console.log(newArr) 
+
+function getData (){
+    var name = document.getElementById('name').value
+    var para = document.getElementById('data')
+    reverseString = name.split('').reverse().join('')
+    if(name===reverseString){
+         para.innerHTML = "Its Palindrome"
+    }
+    else{
+        para.innerHTML = "Its not Palindrome"
+    }
+
+    
+}
+
+
 
 
 
