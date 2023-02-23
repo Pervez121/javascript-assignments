@@ -1,29 +1,34 @@
-var arr = [ 3 , 1 , 4 , 2]
-var newArr = [];
-for(a = 0; a < arr.length; a++){
-    newArr = arr[a] 
-}
+// Min and Max value from a series
+// missing value from a series
+// sorting array without using method
+
+//var values = [53 , 47 , 31 , 14 , 2, 9]
+// var maximum = values[0] 
+// var minimum = values[1] 
+// var flag 
+// for(var num = 0 ; num<values.length; num++){
+//     if(values[num] > maximum){
+//         maximum = values[num]
+//     }
+//     else if(values[num] < minimum){
+//         minimum; minimum = values[num]
+//     }
+// }
+// console.log("maximum = "+ maximum + " Minumum = " + minimum)
 
 
+// without using veriable
 
-// for(a = 0; a < arr.length; a++){
-//     if(arr[0] <= arr[a]){
-//         newArr[0] = arr[0]
-//     }
-//     else if(arr[1] <= arr[a]){
-//         newArr[1] = arr[1]
-//     }
-//     else if(arr[2] <= arr[a]){
-//         newArr[2] = arr[2]
-//     }
-//     else if(arr[3] <= arr[a]){
-//         newArr[3] = arr[3]
+// var values = [53 , 47 , 31 , 14 , 2, 9]
+// for(var num = 0 ; num<values.length; num++){
+//     if(values[num] < values[num+1] && values[num]+1 != [num+1]){
+//         console.log(values[num])
+        
+        
 //     }
 //     else{
-//         alert("something went wrong")
+//         console.log(values[num])
 //     }
 // }
 
 
-
-console.log(arr , newArr)
