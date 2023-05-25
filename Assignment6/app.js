@@ -27,3 +27,24 @@ function mobileName(){
 // Write a program to find the index of letter “n” in the word
 // “Pakistani” and display the result in your browser .
 
+var word = prompt("enter a word to find inder of any number");
+var latter = prompt("enter the latter to find its index");
+var latterIndex = word.indexOf(latter);
+var answerThree = document.getElementById("answer3");
+answerThree.innerHTML = "String : "+latter + "<br> index of "+ latter + "= "+latterIndex;
+
+// Write a program to find the last index of letter “l” in the
+// word “Hello World” and display the result in your browser.
+
+var word = "Hello World";
+var letter =  "l"
+var lastIndex = word.lastIndexOf(letter);
+var answerFour = document.getElementById("answer4");
+answerFour.innerHTML = "String : "+letter + "<br>last index of "+ letter + "= "+lastIndex;
+
+// 6. Repeat Q1 using string concat() method.
+
+let text1 = "Hello";
+let text2 = "world!";
+let result = text1.concat(" ", text2);
+
